@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Lexend+Deca:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Big+Shoulders+Display:100,200,300,regular,500,600,700,800,900);
+:root {
+    --pr-brightorange: hsl(31, 77%, 52%);
+    --pr-darkcyan: hsl(184, 100%, 22%);
+    --pr-verydarkcyan: hsl(179, 100%, 13%);
+
+    --neu-transparentwhite: hsla(0, 0%, 100%, 0.75);
+    --neu-verylightgray: hsl(0, 0%, 95%);
+
+    --fw-heavy: 700;
+    --fw-light: 500;
+}
+
+body {
+    font-size: 15px;
+    background-color: var(--neu-verylightgray);
+}
+
+.component {
+    margin: 70px auto 30px auto;
+    display: flex;
+    width: 1000px;
+    height: auto;
+}
+
+.part {
+    padding: 2.5rem;
+    padding-right: 4em;
+    color: var(--neu-verylightgray);
+}
+
+.sedan {
+    background-color: var(--pr-brightorange);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.SUVs {
+    background-color: var(--pr-darkcyan);
+}
+
+.luxury {
+    background-color: var(--pr-verydarkcyan);
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+h1 {
+    font-weight: var(--fw-heavy);
+    font-size: 3rem;
+    font-family: Big Shoulders Display, "Roboto";
+}
+p {
+    font-weight: var(--fw-light);
+    font-size: 1.2rem;
+    font-family: Lexend Deca, sans-serif;
+}
+button {
+    padding: 1rem 3rem 1rem 3rem;
+    border-radius: 25px;
+    font-weight: var(--fw-heavy);
+    margin-top: 5.5rem;
+    border-width: 2px;
+}
+#sedan {
+    color: var(--pr-brightorange);
+    border-color: var(--pr-brightorange);
+}
+
+#suv {
+    color: var(--pr-darkcyan);
+    border-color: var(--pr-darkcyan);
+}
+
+#luxury {
+    color: var(--pr-verydarkcyan);
+    border-color: var(--pr-verydarkcyan);
+}
+
+/* Active States */
+#sedan:hover, #suv:hover, #luxury:hover {
+    color: var(--neu-transparentwhite);
+    border-color: var(--neu-transparentwhite);
+}
+
+#sedan:hover {
+    background-color: var(--pr-brightorange);
+}
+#suv:hover {
+    background-color: var(--pr-darkcyan);
+}
+#luxury:hover {
+    background-color: var(--pr-verydarkcyan);
+}
+
+
+@media screen and (max-width: 1040px) {
+    .component {
+        flex-direction: column;
+        margin: auto;
+        width: auto;
+    }
+    .part {
+        padding: 3.5rem;
+    }
+    .sedan {
+        border-radius: 15px 15px 0px 0px;
+    }
+    .luxury {
+        border-radius: 0px 0px 15px 15px;
+    }
+    button {
+        margin-top: 1.5rem;
+    }
+}
