@@ -26,8 +26,7 @@ Mobile Version -
 ![](./images/Frontend%20Mentor%20_%203-column%20preview%20card%20component%20mobile.png)
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (3-columncomponent.netlify.app)
 
 ## My process
 
